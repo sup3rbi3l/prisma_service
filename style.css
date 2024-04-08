@@ -7,7 +7,9 @@
     
 
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 header{
     display: flex;
@@ -23,10 +25,11 @@ header{
 }
 h1{
     background: none;
-    font-size: 300%;
+    font-size: 250%;
     text-align: center;
-    margin: 1%;
+    margin: 0%;
     color: #2f4858;
+    
 }
 
 .redes{
@@ -54,8 +57,10 @@ nav{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-right: 5% ;
-    margin-left: 5% ;
+    margin: 0%;
+    padding-right: 5% ;
+    padding-left: 5% ;
+    width: 80%;
 }
 
 .div_nav{
@@ -70,7 +75,7 @@ margin: 01%;
 .a_nav{
     display: flex;
     justify-content: center;
-    margin: 4%;
+    margin: 2%;
     background: none;
     background-color: red;
     border-color: red;
@@ -80,9 +85,9 @@ margin: 01%;
     border-style: solid;
     border-radius: 30px;
     border-color: var(red);
-    padding: 6px 18px 6px 18px;
+    padding:2px 18px 2px 18px;
     font-size: 200%;
-    margin-top: 5%;
+    margin-top: 1%;
     
 }
 
@@ -104,8 +109,7 @@ align-items: center;
 }
 
 p{
-font-size: 300%;
-
+font-size: 200%;
 
 }
 
@@ -115,7 +119,13 @@ font-size: 300%;
 
 
 }
+.div_p{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    
 
+}
 
 .p_body{
     margin: 2%;
@@ -130,24 +140,52 @@ font-size: 300%;
     flex-direction: column;
     align-items: center;
     background-color: #d3d3d3;
-    margin: 1%;
 
 
 }
 
 
-img{
+.img_planos{
     border-color: red;
     border-style: ridge;
     border-radius: 5%;
     margin: 1%;
-    
+    margin-top: 0%;
+
 
 }
 
 .div_planos{
     gap: 10px;
     margin: 1%;
+    margin-top: 0%;
     white-space: nowrap;
+
+}
+
+
+.div_body1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdb7b7;
+
+
+}
+#menu {
+    
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 90%; /* Largura do menu */
+    z-index: 1000; /* Para garantir que o menu esteja acima de outros elementos */
+}
+
+
+.menu-scrolled{
+
+color: white;
 
 }

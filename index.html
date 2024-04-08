@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes prisma</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll', function() {
+        var menu = document.getElementById('menu');
+        var prisma = document.getElementById('prisma')
+        if (window.scrollY > 0) {
+            prisma.style.color = '#ffffff';
+            menu.style.backgroundColor = '#333'; // Altere a cor de fundo conforme necessário
+        } else {
+            prisma.style.color = '#2f4858';
+            menu.style.backgroundColor = 'transparent'; // Cor de fundo inicial
+        }
+    });
+    </script>
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Prisma service</h1>
+        <nav id="menu">
+            <h1 id="prisma">Prisma on</h1>
             <div class="div_nav">
-                <a class="a_nav" href="">Planos</a>
-                <a class="a_nav" href="">Contato</a>
+                <a class="a_nav" href="#planos">Planos</a>
+                <a class="a_nav" href="#contatos">Contato</a>
                 
 
             </div>
         </nav>
+        <br><br><br>
+
         <br><br><br><br><br>
         <div class="div_header">
             
@@ -28,29 +43,39 @@
                 Com a Prisma, mergulhe em entretenimento envolvente e estudos produtivos. Navegue em velocidade e confiabilidade para explorar um mundo de possibilidades online.</h1>
 
         </div>
-        <br><br><br><br><br>
+
+        <br ><br><br id="planos" ><br><br >
     
 
     </header>
     
     <div class="div_body">
-
-        <p class="p_body">Planos</p>
-        
+        <div class="div_p">
+            <p  class="p_body">Planos</p>
+        </div>
         <div class="div_planos">
-            <a href=""><img src="plano.png" alt=""></a>
-            <a href=""><img src="plano.png" alt=""></a>
-            <a href=""><img src="plano.png" alt=""></a>
+            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
+            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
+            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
 
 
         </div>
     </div>
+    <br>
+    
+    <div class="div_body1">
+        <div class="div_p">
+            <p id='contatos'class="p_body">Contatos</p>
+        </div>
+
+        <div class="redes">
+            <a class="a_redes"href="https://www.instagram.com/"  target="_blank" ><img width="40%" src="image.png" alt="instagram"> Instagram</a>
+
+        </div>
 
 
-
-    <div class="redes">
-        <a class="a_redes"href="https://www.instagram.com/"  target="_blank" ><img width="40%" src="image.png" alt="instagram"> Instagram</a>
     </div>
+
 
 
 </body>
