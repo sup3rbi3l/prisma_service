@@ -3,7 +3,7 @@
 *{
     margin: 0;
     text-decoration: none;
-    background-color: white;
+    
 
 }
 
@@ -11,15 +11,17 @@
 header{
     display: flex;
     justify-content: center;
-    background-color: red;
-    color: white;
-    padding: 2%;
+    flex-direction: column;
+    padding: 0%;
     border-style:solid;
     border-color: black;    
     border-width: 1px;
+    background-image: url("predios.jpg");
+    background-size: 100% auto;
+    
 }
 h1{
-    background-color: red;
+    background: none;
     font-size: 350%;
 }
 
@@ -31,7 +33,7 @@ h1{
 }
 
 
-a{
+.a_redes{
     margin: 5%;
     margin-right: 50%;
     margin-left: 50%;
@@ -40,5 +42,72 @@ justify-content: center;
 align-items: center;
 font-size: 300%;
 padding: 1%;
-gap: 20px;
+gap: 60px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5% ;
+    margin-left: 5% ;
+}
+
+.div_nav{
+
+display: flex;
+flex-direction: row;
+margin: 01%;
+
+}
+
+
+.a_nav{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    background: none;
+    background-color: red;
+    border-color: red;
+    border-radius: 5%;
+    color: white;
+    
+    border-style: solid;
+    border-radius: 22px;
+    border-color: var(red);
+    padding: 6px 16px 6px 16px;
+    font-size: 300%;
+    margin-top: 5%;
+    
+}
+
+
+
+.a_nav:hover{
+
+color: black;
+
+}
+
+
+.div_header{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+
+p{
+font-size: 300%;
+
+
+}
+
+.p_div{
+    color: red;
+
+
+
 }
