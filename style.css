@@ -1,0 +1,15 @@
+
+
+*{
+    margin: 0;
+    text-decoration: none;
+    background-color: red;
+
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+
+}
