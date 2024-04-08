@@ -3,6 +3,7 @@
 *{
     margin: 0;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     
 
 }
@@ -16,13 +17,16 @@ header{
     border-style:solid;
     border-color: black;    
     border-width: 1px;
-    background-image: url("predios.jpg");
+    background-image: url("8hr60jort3w91.gif");
     background-size: 100% auto;
     
 }
 h1{
     background: none;
-    font-size: 350%;
+    font-size: 300%;
+    text-align: center;
+    margin: 1%;
+    color: #2f4858;
 }
 
 .redes{
@@ -71,13 +75,13 @@ margin: 01%;
     background-color: red;
     border-color: red;
     border-radius: 5%;
-    color: white;
+    color: #daf7dc;
     
     border-style: solid;
-    border-radius: 22px;
+    border-radius: 30px;
     border-color: var(red);
-    padding: 6px 16px 6px 16px;
-    font-size: 300%;
+    padding: 6px 18px 6px 18px;
+    font-size: 200%;
     margin-top: 5%;
     
 }
@@ -106,8 +110,44 @@ font-size: 300%;
 }
 
 .p_div{
-    color: red;
+    color: #EE4B2B;
+    text-align: center;
 
 
+}
+
+
+.p_body{
+    margin: 2%;
+    font-size: 250%;
+    color: #ff1b1c;
+}
+
+
+.div_body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3d3d3;
+    margin: 1%;
+
+
+}
+
+
+img{
+    border-color: red;
+    border-style: ridge;
+    border-radius: 5%;
+    margin: 1%;
+    
+
+}
+
+.div_planos{
+    gap: 10px;
+    margin: 1%;
+    white-space: nowrap;
 
 }
