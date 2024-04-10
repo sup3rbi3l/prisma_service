@@ -10,9 +10,10 @@
         var menu = document.getElementById('menu');
         var prisma = document.getElementById('prisma')
         if (window.scrollY > 0) {
-            prisma.style.color = '#ffffff';
+            prisma.src = "8.png"
             menu.style.backgroundColor = '#333'; // Altere a cor de fundo conforme necessário
         } else {
+            prisma.src = "9.png"
             prisma.style.color = '#2f4858';
             menu.style.backgroundColor = 'transparent'; // Cor de fundo inicial
         }
@@ -22,7 +23,7 @@
 <body>
     <header>
         <nav id="menu">
-            <h1 id="prisma">Prisma on</h1>
+            <h1 ><img class="img_menu" id="prisma"  src="9.png" alt=""></h1>
             <div class="div_nav">
                 <a class="a_nav" href="#planos">Planos</a>
                 <a class="a_nav" href="#contatos">Contato</a>
@@ -30,33 +31,23 @@
 
             </div>
         </nav>
-        <br><br><br>
-
-        <br><br><br><br><br>
-        <div class="div_header">
-            
-            <p class="p_div">Conecte-se à velocidade da luz com Prisma <br>
-                onde a internet ganha vida.
-            </p>
-            <br>
-            <h1>
-                Com a Prisma, mergulhe em entretenimento envolvente e estudos produtivos. Navegue em velocidade e confiabilidade para explorar um mundo de possibilidades online.</h1>
-
-        </div>
-
-        <br ><br><br id="planos" ><br><br >
+        <br ><br >
     
-
+        
     </header>
-    
-    <div class="div_body">
+
+
+    <p id="planos"></p>
+
+
+    <div class="div_body"  >
         <div class="div_p">
             <p  class="p_body">Planos</p>
         </div>
         <div class="div_planos">
-            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
-            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
-            <a href=""><img class="img_planos" src="plano.png" alt=""></a>
+            <img class="img_planos" src="plano.png" alt="">
+            <img class="img_planos" src="plano.png" alt="">
+            <img class="img_planos" src="plano.png" alt="">
 
 
         </div>
@@ -64,18 +55,58 @@
     <br>
     
     <div class="div_body1">
-        <div class="div_p">
-            <p id='contatos'class="p_body">Contatos</p>
-        </div>
+        
 
-        <div class="redes">
-            <a class="a_redes"href="https://www.instagram.com/"  target="_blank" ><img width="40%" src="image.png" alt="instagram"> Instagram</a>
-
-        </div>
 
 
     </div>
+    <footer>
+        <p id='contatos'class="p_body">Contatos:</p>
+        <div class="div_footer" >
+            <div class="box_left">
+                <img src="9.png" width="30%">
+                <p class="box_left_text">algo sobre nós</p>
+            </div>
 
+            <div class="box_img">
+                <a href="https://www.instagram.com/"  target="_blank" class="div_redes">
+                    <img src="instagram.png" width="12%">
+                    <p class="a_redes">Instagram</p>
+                </a>
+
+                <a href="https://www.instagram.com/"  target="_blank" class="div_redes">
+                    <img src="linkedin.png" width="12%">
+                    <p class="a_redes">Linkedin</p>
+                </a>
+
+                <a href="https://www.instagram.com/"  target="_blank" class="div_redes">
+                    <img src="facebook.png" width="12%">
+                    <p class="a_redes">facebook</p>
+                </a>
+                <a href="https://www.instagram.com/"  target="_blank" class="div_redes">
+                    <img src="whatsapp.png" width="12%">
+                    <p class="a_redes">WhatsApp</p>
+                </a>
+        </div>
+            <div class="box" style="text-align: start;">
+                <p style="font-size: 100%;"> <a target="_blank" href="https://www.google.com/maps/uv?pb=!1s0x94eb45345f46155b%3A0x1a48a3c37aab3f7c!3m1!7e115!4s%2Fmaps%2Fplace%2Fprisma%2Bservice%2Blondrina%2Bmaps%2F%40-23.3106989%2C-51.2047905%2C3a%2C75y%2C316.76h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sguigEAEYF9HpvZ96gLp0zg*212e0*214m2*213m1*211s0x94eb45345f46155b%3A0x1a48a3c37aab3f7c%3Fsa%3DX%26ved%3D2ahUKEwjfiJuJ5reFAxVXgWEGHTp2AL8Qpx96BAhOEAA!5sprisma%20service%20londrina%20maps%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e2!2sguigEAEYF9HpvZ96gLp0zg&hl=pt-BR&ved=1t%3A206134&ictx=111">Av. Arthur Thomas, 1846 - Sabará, Londrina - PR, 86065-000</a>
+                    <br>
+                    Horário de funcionamento: 
+                    <br>
+                    segunda-feira	08:00–17:00 <br>
+                    terça-feira	08:00–17:00 <br> 
+                    quarta-feira	08:00–17:00 <br>
+                    quinta-feira	08:00–17:00 <br>
+                    sexta-feira	08:00–17:00 <br>
+                    sábado	Fechado <br>
+                    domingo	Fechado <br>
+                    
+                    
+            </div>
+        </div>
+
+
+    </footer>
 
 
 </body>

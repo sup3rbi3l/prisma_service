@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 *{
     margin: 0;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo', sans-serif;
     
 
 }
@@ -19,9 +19,11 @@ header{
     border-style:solid;
     border-color: black;    
     border-width: 1px;
-    background-image: url("8hr60jort3w91.gif");
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+
     background-size: 100% auto;
-    
+    padding-bottom: 30%;
 }
 h1{
     background: none;
@@ -34,23 +36,27 @@ h1{
 
 .redes{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
+    padding: 0%;
+    margin: 0%;
 
 }
 
 
 .a_redes{
-    margin: 5%;
-    margin-right: 50%;
-    margin-left: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 300%;
-padding: 1%;
-gap: 60px;
+
+    text-align: center;
+    color: black;
+
+    display: inline-block;
+    
+    font-size: 200%;
+    padding: 0%;
+    
 }
+
 
 nav{
     display: flex;
@@ -58,9 +64,10 @@ nav{
     flex-direction: row;
     align-items: center;
     margin: 0%;
-    padding-right: 5% ;
     padding-left: 5% ;
-    width: 80%;
+    padding-right: 5% ;
+
+    
 }
 
 .div_nav{
@@ -79,14 +86,14 @@ margin: 01%;
     background: none;
     background-color: red;
     border-color: red;
-    border-radius: 5%;
-    color: #daf7dc;
+    border-radius: 10%;
+    color: black;
     
     border-style: solid;
     border-radius: 30px;
     border-color: var(red);
-    padding:2px 18px 2px 18px;
-    font-size: 200%;
+    padding:3px 20px 3px 20px;
+    font-size: 150%;
     margin-top: 1%;
     
 }
@@ -95,7 +102,7 @@ margin: 01%;
 
 .a_nav:hover{
 
-color: black;
+color: white;
 
 }
 
@@ -120,27 +127,26 @@ font-size: 200%;
 
 }
 .div_p{
-    margin: 2%;
+    margin: 0%;
     display: flex;
     flex-direction: row;
-    
-
+    justify-content: center;
+    text-align: center;
 }
 
 .p_body{
-    margin: 2%;
-    font-size: 250%;
-    color: #ff1b1c;
+    
+    font-size: 300%;
+    color: black;
 }
 
 
 .div_body{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     background-color: #d3d3d3;
-
+    text-align: center;
+    
 
 }
 
@@ -149,17 +155,23 @@ font-size: 200%;
     border-color: red;
     border-style: ridge;
     border-radius: 5%;
-    margin: 1%;
+    margin: 0%;
     margin-top: 0%;
-
+    width: 20%; /* Set width to more than 100% */
+    margin-bottom: 2%;
+    height: auto; /* Maintain aspect ratio */
+    
 
 }
 
 .div_planos{
-    gap: 10px;
-    margin: 1%;
-    margin-top: 0%;
-    white-space: nowrap;
+    
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
 
 }
 
@@ -177,10 +189,16 @@ font-size: 200%;
     
     position: fixed;
     display: flex;
-    justify-content: space-between;
+
     top: 0;
-    width: 90%; /* Largura do menu */
-    z-index: 1000; /* Para garantir que o menu esteja acima de outros elementos */
+    width: 90%; 
+    z-index: 1000;
+}
+.img_menu{
+    margin: 0%;
+    margin-left: -45%;
+    max-width: 40%;
+    height: auto;
 }
 
 
@@ -189,3 +207,149 @@ font-size: 200%;
 color: white;
 
 }
+
+.div_footer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.box {
+    flex: 1; /* Permite que as divs ocupem o mesmo espaço */
+    padding: 20px;
+    
+}
+
+
+.box_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 20px;
+}
+
+footer{
+padding: 0%;
+margin: 0%;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}
+
+.div_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-color: red;
+    color: black;
+    padding-right: 5%;
+    margin: 1%;
+    border: 1px solid currentcolor;
+    border-radius: 100rem;
+    border-style: solid;
+    border-color: var(red);
+    background-color: #808080;
+}   
+img{
+    margin: 1%;
+}
+
+.box_left{
+
+    flex: 1; /* Permite que as divs ocupem o mesmo espaço */
+    
+    padding: 20px;
+}
+.box_left_text{
+
+    font-size: 200%;
+    
+}
+img{
+
+    margin: 3%;
+
+}
+
+@media screen and (max-width: 1285px) {
+    .box_img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+    }
+    .a_redes{
+
+        
+        padding: 0%;
+    }
+    .div_redes{
+
+        padding-right: 0%;
+    }
+ }
+
+
+@media screen and (max-width: 912px) {
+    .box_img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .a_redes{
+
+        font-size: 100%;
+        padding: 0%;
+    }
+    .div_redes{
+
+        padding-right: 0%;
+    }
+
+    .img_menu{
+        margin: 0%;
+        margin-left: -55%;
+        max-width: 20%;
+        height: auto;
+    }
+    .a_nav{
+        font-size: 80%;
+
+    }
+    .p_body{
+        font-size: 200%;
+
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    header{
+
+        padding-bottom: 20%;
+        background-image: url("background_vertical.png");
+        background-size: 100%;
+        padding-bottom: 100%;
+    }
+    .box_left_text{
+
+        font-size: 100%;
+    }
+    .div_planos{
+
+        gap: 5px;
+        max-width: 120%;
+    }
+
+ }
+
+ @media screen and (max-width: 600px) {
+
+    .div_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+ }
