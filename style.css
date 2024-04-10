@@ -189,24 +189,19 @@ font-size: 200%;
     
     position: fixed;
     display: flex;
-
+    flex-direction: row;
+    
     top: 0;
     width: 90%; 
     z-index: 1000;
 }
 .img_menu{
-    margin: 0%;
-    margin-left: -45%;
+    margin: 3%;
+    margin-left: -55%;
     max-width: 40%;
     height: auto;
 }
 
-
-.menu-scrolled{
-
-color: white;
-
-}
 
 .div_footer{
     display: flex;
@@ -264,7 +259,7 @@ img{
 }
 .box_left_text{
 
-    font-size: 200%;
+    font-size: 100%;
     
 }
 img{
@@ -292,7 +287,7 @@ img{
  }
 
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 1150px) {
     .box_img{
         display: flex;
         flex-direction: column;
@@ -311,7 +306,7 @@ img{
 
     .img_menu{
         margin: 0%;
-        margin-left: -55%;
+        margin-left: -60%;
         max-width: 20%;
         height: auto;
     }
