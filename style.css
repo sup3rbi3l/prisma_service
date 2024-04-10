@@ -353,3 +353,17 @@ img{
     }
 
  }
+
+ @media screen and (max-width: 450px) {
+
+   .img_menu{
+    max-width: 50%;
+
+   }
+   .img_planos{
+    width: 30%;
+   }
+   .div_redes{
+    width: 130%;
+   }
+ }
