@@ -364,6 +364,13 @@ img{
     width: 30%;
    }
    .div_redes{
-    width: 130%;
+    width: 270%;
+    margin: 10%;   
+}
+   .a_redes{
+    
+    font-size: 200%;
    }
+
+
  }
