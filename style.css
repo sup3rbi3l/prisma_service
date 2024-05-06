@@ -74,7 +74,6 @@ nav{
 
 display: flex;
 flex-direction: row;
-margin: 01%;
 
 }
 
@@ -152,12 +151,11 @@ font-size: 200%;
 
 
 .img_planos{
-    border-color: red;
-    border-style: ridge;
+
     border-radius: 5%;
     margin: 0%;
     margin-top: 0%;
-    width: 20%; /* Set width to more than 100% */
+    width: 50%; /* Set width to more than 100% */
     margin-bottom: 2%;
     height: auto; /* Maintain aspect ratio */
     
@@ -167,14 +165,88 @@ font-size: 200%;
 .div_planos{
     
     display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+
+}
+.div_planos1{
     
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+}
+
+.div_planos2{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+  }
+.container img {
+display: block;
+width: 100%; /* Para garantir que a imagem preencha todo o contêiner */
+}
+
+.container1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+.container1 img {
+display: block;
+width: 100%; /* Para garantir que a imagem preencha todo o contêiner */
+}
+.img_planos2{
+    width: 50%;
+
 
 }
 
+.texto_imagem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo do texto */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+.texto_planos{
+
+    margin: 5%;
+    font-size: 400%;
+    text-align: center;
+
+}
+
+
+
+.div_img{
+display: flex;
+justify-content: center;
+text-align: center;
+gap: 30px;
+}
+
+.div_imagem{
+    display: flex;
+    
+    width: 50%;
+    margin: 0%;
+}
+
+.imagem{
+    margin: 0%;
+}
 
 .div_body1{
     display: flex;
@@ -190,15 +262,14 @@ font-size: 200%;
     position: fixed;
     display: flex;
     flex-direction: row;
-    
     top: 0;
     width: 90%; 
     z-index: 1000;
 }
 .img_menu{
-    margin: 3%;
+    margin: 1%;
     margin-left: -55%;
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
 }
 
@@ -217,10 +288,12 @@ font-size: 200%;
 
 .box_img{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
+    width: 20%;
+    margin: 0%;
+    
 }
 
 footer{
@@ -239,16 +312,15 @@ text-align: center;
     align-items: center;
     justify-content: center;
     color: black;
-    padding-right: 7%;
-    margin: 1%;
-    border: 2px solid currentcolor;
-    border-radius: 100rem;
-    border-style: solid;
-    border-color: black;
-    background-color: #808080;
+    padding: 0%;
+    padding-right: 0%;
+    width: 300%;
+    margin: 11%; 
+    
+    
 }   
 img{
-    margin: 1%;
+    margin: 4%;
 }
 
 .box_left{
@@ -270,9 +342,7 @@ img{
 
 @media screen and (max-width: 1285px) {
     .box_img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        
         width: 20%;
     }
     .a_redes{
@@ -282,7 +352,10 @@ img{
     }
     .div_redes{
 
+        padding: 0%;
         padding-right: 0%;
+        width: 300%;
+        margin: 11%;   
     }
  }
 
@@ -290,18 +363,19 @@ img{
 @media screen and (max-width: 1150px) {
     .box_img{
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
         
     }
     .a_redes{
 
         font-size: 100%;
-        padding: 0%;
     }
     .div_redes{
-
+        padding: 0%;
         padding-right: 0%;
+        width: 300%;
+        margin: 11%;   
     }
 
     .img_menu{
@@ -318,6 +392,7 @@ img{
         font-size: 200%;
 
     }
+    
  }
 
  @media screen and (max-width: 700px) {
@@ -337,6 +412,10 @@ img{
         gap: 5px;
         max-width: 120%;
     }
+    .div_redes{
+        width: 300%;
+        margin: 11%;   
+    }
     
 
  }
@@ -349,7 +428,32 @@ img{
     }
     .div_redes{
         width: 200%;
-        margin: 10%;   
+        margin: 11%;   
+    }
+    .box_img{
+        gap: 6px;
+        width: 80%;
+    }
+
+    .div_planos{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .div_planos1{
+    
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .div_imagem{
+
+        width: 100%;
     }
  }
 
@@ -363,8 +467,9 @@ img{
     width: 30%;
    }
    .div_redes{
-    width: 270%;
-    margin: 10%;   
+    width: 100%;
+    margin: 10.5%;   
+
 }
    .a_redes{
     
