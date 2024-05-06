@@ -403,6 +403,11 @@ img{
         text-align: center;
     
     }
+    .container2 img {
+        display: block;
+        width: 70%; /* Para garantir que a imagem preencha todo o contêiner */
+        padding-left: 10%
+        }
     
  }
 
@@ -434,6 +439,12 @@ img{
         text-align: center;
     
     }
+    .container2 img {
+        display: block;
+        width: 50%; /* Para garantir que a imagem preencha todo o contêiner */
+        padding-left: 10%
+        }
+    
 
  }
 
