@@ -153,12 +153,16 @@ font-size: 200%;
 .img_planos{
 
     border-radius: 5%;
-    margin: 0%;
+    margin: 5%;
     margin-top: 0%;
     width: 0%; /* Set width to more than 100% */
     margin-bottom: 2%;
     height: auto; /* Maintain aspect ratio */
     
+
+}
+.img_planos2{
+    max-width: 80%;
 
 }
 
@@ -228,11 +232,17 @@ width: 100%; /* Para garantir que a imagem preencha todo o contêiner */
 .texto_planos{
 
     margin: 1%;
+    margin-left: 5%;
     font-size: 400%;
     text-align: center;
-
 }
+.texto_planos2{
 
+    margin: 1%;
+    font-size: 400%;
+    text-align: start;
+    margin-left: 12%;
+}
 
 
 .div_img{
@@ -404,6 +414,13 @@ img{
         font-size: 150%;
         text-align: center;
     
+    }
+    .texto_planos2{
+
+        margin: 1%;
+        font-size: 150%;
+        text-align: start;
+        margin-left: 12%;
     }
     .container2 img {
         display: block;
