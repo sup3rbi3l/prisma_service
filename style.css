@@ -325,6 +325,7 @@ text-align: center;
 }   
 img{
     margin: 4%;
+    object-fit: cover;
 }
 
 .box_left{
