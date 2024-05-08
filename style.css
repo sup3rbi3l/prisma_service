@@ -83,14 +83,14 @@ flex-direction: row;
     justify-content: center;
     margin: 2%;
     background: none;
-    background-color: red;
-    border-color: red;
+    background-color: #D4243E;
+    border-color: #D4243E;
     border-radius: 10%;
     color: black;
     
     border-style: solid;
     border-radius: 30px;
-    border-color: var(red);
+    border-color: var(#D4243E);
     padding:3px 20px 3px 20px;
     font-size: 150%;
     margin-top: 1%;
